@@ -70,7 +70,6 @@ img {
   
   .column-2 {
     margin-left: 1.5rem;
-    float: right;
   }
 
   .title {
@@ -133,6 +132,9 @@ img {
 
 
 /*====================================HEADER====================================*/
+.mobile{
+  display: none;
+}
 #menu-bars{
   display: none;
 }
@@ -558,6 +560,9 @@ section {
     bottom: 85%;
   }
   @media (max-width:500px){
+    .mobile{
+      display: block;
+    }
     #menu-bars{
       display: inline-block;
     }
@@ -644,13 +649,12 @@ section {
     }
   
     header .bg2{
-      max-width: 15rem;
+      max-width: 0rem;
       bottom: -5%;
       left: 0;
     }
     .header-content .container.grid-2 {
       margin-top: 6rem;
-      grid-template-columns: 3fr 2.7fr;
       min-height: 100vh;
       padding-bottom: 2.5rem;
       text-align: left;
@@ -663,11 +667,51 @@ section {
       max-width: 20rem;
       top: 0;
   }
-  
     .services-bg2{
       max-width: 20rem;
       bottom: 0;
       right: 0;
+    }
+    .header-image {
+      width: 250px;
+      transform: translateX(-50px);
+    }
+    .overlay.overlay-lg .shape {
+      height: 35px;
+    }
+    
+    .overlay.overlay-lg .shape.wave {
+      height: initial;
+      width: 48px;
+    }
+    
+    .overlay.overlay-lg .shape.xshape {
+      height: 18px;
+    }
+    
+    .overlay.overlay-sm .shape {
+      filter: brightness(0) invert(1);
+      opacity: 0.15;
+      height: 20px;
+    }
+    
+    .overlay.overlay-sm .shape.wave {
+      height: initial;
+      width: 40px;
+    }
+    
+    .overlay.overlay-sm .shape.xshape {
+      height: 20px;
+    }
+    .column-1 {
+      margin-right: 0rem;
+      transform: translateY(200px);
+    }
+    
+    .column-2 {
+      margin-right: 0rem;
+      transform: translateY(-400px);
+      display: flex;
     }
   }
 
